@@ -44,13 +44,13 @@ class Linkedlist
 		end
 	end
 
-	def delete_element(datosaeliminar)
+	def delete_element(datumtoeliminate)
 		nodoactual=@header
-		if nodoactual.get_datos==datosaeliminar
+		if nodoactual.get_datos==datumtoeliminate
 			@header=@header.get_referencia
 		else
 			nodoactual=@header
-			while(nodoactual.get_referencia !=nil) && ((nodoactual.get_referencia).get_datos !=datosaeliminar)
+			while(nodoactual.get_referencia !=nil) && ((nodoactual.get_referencia).get_datos !=datumtoeliminate)
 				nodoactual=nodoactual.get_referencia
 			end
 			if (nodoactual !=nil) && (nodoactual.get_referencia !=nil)
